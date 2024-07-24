@@ -1,11 +1,15 @@
 import re
+
 import requests
 from PIL import Image
 import pytesseract
 
 # Откройте изображение
 image_path = 'photo/gg1.jpg'  # <---- Это фото с которым мы будем работать!
-image = Image.open(image_path)
+try:
+    image = Image.open(image_path)
+except FileNotFoundError:
+    print('ФАЙЛ НЕ НАЙДЕН')
 
 # Используйте pytesseract для распознавания текста
 text = pytesseract.image_to_string(image, lang='eng+rus')
