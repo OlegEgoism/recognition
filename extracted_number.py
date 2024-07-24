@@ -4,7 +4,7 @@ from PIL import Image
 import pytesseract
 
 # Откройте изображение
-image_path = 'photo/gg1.jpg'
+image_path = 'photo/gg1.jpg'  # <---- Это фото с которым мы будем работать!
 image = Image.open(image_path)
 
 # Используйте pytesseract для распознавания текста
