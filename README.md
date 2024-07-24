@@ -4,3 +4,6 @@
 Для работы приложения, нужно установить все зависимости из файла requirements.txt. 
 Запустите в терминале команду: pip freeze -> requirements.txt
 Проект работает на Python 3.10
+
+
+![img.png](img.png)
