@@ -5,7 +5,7 @@ import requests
 import pytesseract
 from PIL import Image
 
-image_path = 'photos/gg1.jpg'  # <---- Это фото с которым мы будем работать!
+image_path = 'photos/gg3.jpg'  # <---- Это фото с которым мы будем работать!
 
 """РАСПОЗНАВАНИЕ ТЕКСТА"""
 try:
