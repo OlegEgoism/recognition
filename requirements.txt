@@ -1,6 +1,9 @@
 certifi==2024.7.4
 charset-normalizer==3.3.2
 idna==3.7
+numpy==2.0.1
+opencv-python==4.10.0.84
+opencv-python-headless==4.10.0.84
 packaging==24.1
 pillow==10.4.0
 pytesseract==0.3.10
