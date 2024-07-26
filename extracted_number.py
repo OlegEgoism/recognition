@@ -2,8 +2,8 @@ import os
 import re
 import cv2
 import requests
-from PIL import Image
 import pytesseract
+from PIL import Image
 
 image_path = 'photos/gg4.jpg'  # <---- Это фото с которым мы будем работать!
 
