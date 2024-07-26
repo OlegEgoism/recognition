@@ -5,7 +5,7 @@ import requests
 import pytesseract
 from PIL import Image
 
-image_path = 'photos/gg4.jpg'  # <---- Это фото с которым мы будем работать!
+image_path = 'photos/gg1.jpg'  # <---- Это фото с которым мы будем работать!
 
 """РАСПОЗНАВАНИЕ ТЕКСТА"""
 try:
@@ -52,7 +52,7 @@ for min_size in min_size_range:
             face = image[y:y + h, x:x + w]
             face_image = Image.fromarray(cv2.cvtColor(face, cv2.COLOR_BGR2RGB))
             face_image.save(f'photos_faces/face_{extracted_number}.jpg')
-            print(f"Фотография лица сохранена как: face_minSize_{extracted_number}.jpg")
+            print(f"Фотография лица сохранена как: face_{extracted_number}.jpg")
 
 if not found_faces:
     print("Лицо не найдено.")
